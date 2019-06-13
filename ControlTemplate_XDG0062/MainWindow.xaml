@@ -1,0 +1,23 @@
+﻿<Window x:Class="ControlTemplate_XDG0062.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ControlTemplate_XDG0062"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <!-- remove the Window.Resources will dispel the XDG0062 error -->
+    <Window.Resources>
+        <local:MainWindowViewModel x:Key="Hey" />
+    </Window.Resources>
+    <Grid>
+        <ContentControl>
+            <ControlTemplate>
+                <ContentControl>
+                    <local:Foo />
+                </ContentControl>
+            </ControlTemplate>
+        </ContentControl>
+    </Grid>
+</Window>

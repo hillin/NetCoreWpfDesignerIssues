@@ -13,5 +13,6 @@
         <local:SomethingElse />
     </Window.DataContext>
     <Grid>
+
     </Grid>
 </Window>
